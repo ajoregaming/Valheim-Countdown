@@ -161,8 +161,8 @@
     function hedeflenenTarihiAl() {
       const suAn = new Date();
       const yil = suAn.getFullYear();
-      // Eylül = 8. ay index'i. 9 Eylül Saat 00:00:00
-      let hedef = new Date(yil, 8, 9, 0, 0, 0); 
+      // Eylül = 8. ay index'i. 9 Eylül Saat 16:00:00
+      let hedef = new Date(yil, 8, 9, 16, 0, 0); 
       
       if (suAn.getTime() > hedef.getTime()) {
         hedef = new Date(yil + 1, 8, 9, 0, 0, 0);
